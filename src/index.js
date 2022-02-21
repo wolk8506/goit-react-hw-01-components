@@ -1,12 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { App } from 'components/App';
+import { Profile } from 'components/Profile';
+import { Statistics } from 'components/Statistics';
+import { FriendList } from 'components/FriendList';
+
 import reportWebVitals from './reportWebVitals';
 import './index.css';
+import user from 'user.json';
+// import data from 'data.json';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Profile
+      username={user.username}
+      tag={user.tag}
+      location={user.location}
+      avatar={user.avatar}
+      stats={user.stats}
+    />
+    <Statistics />
+    <FriendList />
   </React.StrictMode>,
   document.getElementById('root')
 );
