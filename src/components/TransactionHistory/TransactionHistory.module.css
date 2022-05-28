@@ -1,0 +1,27 @@
+.transactionHistory{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 450px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    margin-bottom: 30px;
+}
+
+.tableName{
+    background-color: rgb(45, 128, 167);
+}
+.cell{
+    text-align: center;
+    padding: 5px;
+    
+}
+.item:nth-child(even){
+    background-color: #ccc;
+}
+
+.item:nth-child(odd){
+    background-color: rgb(241, 241, 241);
+}
